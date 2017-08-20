@@ -37,13 +37,13 @@ var bio = {
       $("#topContacts").prepend(contactsemail);
       var contactsmobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
       $("#topContacts").prepend(contactsmobile);
-      $("#header").append(HTMLskillsStart)
+      $("#header").append(HTMLskillsStart);
       for (var i = 0; i < bio.skills.length; i++ ) {
         var formattedSkill = HTMLskills.replace("%data%",  bio.skills[i] );
         $('#skills').append(formattedSkill);
       }
     }
-}
+};
 
 bio.display();
 
@@ -69,7 +69,8 @@ var exp = {
       $("#workExperience").append(expdescrip);
     
 }
-}
+};
+
 exp.display();
 
  
@@ -94,7 +95,7 @@ var projects = {
       $("#projects").append(projectimg);        
         
     }
-}
+};
 projects.display();
 
 
@@ -129,7 +130,7 @@ var education = {
      $('.education-entry:last').append(formattedSchoolMajor);
   }
   
-} 
+};
 education.display();
 
 
@@ -161,7 +162,7 @@ var footer = {
       $("#footerContacts").append(footermobile);
 
       }
-}
+};
 
 footer.desplay();
 
