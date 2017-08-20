@@ -134,12 +134,33 @@ education.display();
 
 
 
-
-
 $("#mapDiv").append(googleMap);
 
 
 
+var footer = {
 
+    "mobile": "0551125547",
+    "email": "y.almutairi47@gmail.com",
+    "github": "yousef991",
+    "twitter": "u_sef91",
+    "linkedin": "yousef-a",
+    "location": "Riyadh, KSA",
+ 
+    "display" : function() {
 
+      var footerlocation = HTMLlocation.replace("%data%", footer.location);
+      $("#footerContacts").append(footerlocation);
+      var footertwitter = HTMLtwitter.replace("%data%", footer.twitter);
+      $("#footerContacts").append(footertwitter);
+      var footergithub = HTMLgithub.replace("%data%", footer.gethub);
+      $("#footerContacts").append(footergithub);
+      var footeremail = HTMLemail.replace("%data%", footer.email);
+      $("#footerContacts").append(footeremail);
+      var footermobile = HTMLmobile.replace("%data%", footer.mobile);
+      $("#footerContacts").append(footermobile);
 
+      }
+}
+
+footer.desplay();
