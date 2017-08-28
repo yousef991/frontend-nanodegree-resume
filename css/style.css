@@ -139,6 +139,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
+
 }
 
 .flex-column {
@@ -150,6 +151,7 @@ a {
 
 .center-content {
   padding: 2.5% 5%;
+  color: white;
 }
 
 ul {
