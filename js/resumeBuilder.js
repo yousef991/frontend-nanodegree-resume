@@ -79,24 +79,24 @@ work.display();
 var projects = {
 
     "projects": [{
-        "Start": "2016",
-        "Title": "video communication",
-        "Dates": "2016",
-        "Image": ["images/project.png"],
-        "Description": "My project was a video call service for elderly people living alone & help elderly people communicate their friend, children, social worker easily..",
+        "start": "2016",
+        "title": "video communication",
+        "dates": "2016",
+        "images": "images/project.png",
+        "description": "My project was a video call service for elderly people living alone & help elderly people communicate their friend, children, social worker easily..",
     }],
-
-    "display": function() {
-        projects.projects.forEach(function(myproject) {
-            var projectstart = HTMLprojectStart.replace("%data%", myproject.Start);
+    
+        "display": function() {
+            projects.projects.forEach(function(myproject) {
+            var projectstart = HTMLprojectStart.replace("%data%", myproject.start);
             $("#projects").append(projectstart);
-            var projecttitle = HTMLprojectTitle.replace("%data%", myproject.Title);
+            var projecttitle = HTMLprojectTitle.replace("%data%", myproject.title);
             $("#projects").append(projecttitle);
-            var projectdates = HTMLprojectDates.replace("%data%", myproject.Dates);
-            $("#projects").append(projectdates);
-            var projectdescription = HTMLprojectDescription.replace("%data%", myproject.Description);
+            var projectdate = HTMLprojectDates.replace("%data%", myproject.dates);
+            $("#projects").append(projectdate);
+            var projectdescription = HTMLprojectDescription.replace("%data%", myproject.description);
             $("#projects").append(projectdescription);
-            var projectimage = HTMLprojectImage.replace("%data%", myproject.Image);
+            var projectimage = HTMLprojectImage.replace("%data%", myproject.images);
             $("#projects").append(projectimage);
         });
     }

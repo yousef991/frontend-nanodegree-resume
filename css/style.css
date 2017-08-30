@@ -21,7 +21,6 @@ h6 {
 .education-entry,
 .work-entry,
 .project-entry {
-  padding: 0 5%;
 }
 
 h1 {
@@ -68,14 +67,17 @@ h5 {
   color: #999;
   line-height: 16px;
   float: left;
+  padding: inherit;
+    margin: 2%;
 }
 
 .location-text {
   font-style: italic;
   font-size: 14px;
-  color: #999;
-  line-height: 16px;
+  color: #f5ae23;
+  line-height: 10px;
   float: right;
+    padding: 2%;;
 
 }
 
@@ -90,6 +92,7 @@ a {
   text-decoration: none;
   margin-top: 10px;
   display: block;
+ padding: 5px 5%;
 }
 
 .welcome-message {
@@ -138,7 +141,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px;
+  padding: 5px;
 
 }
 
